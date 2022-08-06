@@ -1,6 +1,8 @@
 import logo from './logo.png';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 
 
 function App() {
@@ -15,6 +17,7 @@ function App() {
       </div>
       <Navbar/>
       </header>
+      <ItemListContainer greeting= "Mis Productos apareceran aca"/>
       
     </div>
   );
