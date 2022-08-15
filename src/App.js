@@ -2,6 +2,7 @@ import logo from './logo.png';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemCount from './components/ItemCount/ItemCount';
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <Navbar/>
       </header>
       <ItemListContainer greeting= "Mis Productos apareceran aca"/>
-      
+      <ItemCount/>
     </div>
   );
 }

@@ -1,0 +1,42 @@
+.carrito{
+    padding: 0.5rem;
+    /* background-color: rgb(53, 53, 53);
+    box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.6); */
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 10px;
+}
+
+.boton{
+    margin-bottom: 1rem;
+    margin: 1rem;
+}
+
+.boton2{
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    width: 50%;
+    transition: color .15s ease-in-out;
+}
+
+.boton2:hover{
+    color: #303233;
+}
+
+.span{
+    padding: 1rem;
+    font-family: "Staatliches", cursive;
+    color: white;
+}
+
+.btn{
+    border-radius: 5px;
+    border-style: none;
+    background-color: #0a0a0a;
+    color: white;
+}
