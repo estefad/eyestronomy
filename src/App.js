@@ -18,7 +18,7 @@ function App() {
       </div>
       <Navbar/>
       </header>
-      <ItemListContainer greeting= "Mis Productos apareceran aca"/>
+      <ItemListContainer/>
       <ItemCount/>
     </div>
   );
