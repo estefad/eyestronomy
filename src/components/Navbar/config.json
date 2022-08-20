@@ -1,0 +1,6 @@
+{
+    "routes":[
+        {"label":"Home", "to":"/"},
+        {"label":"Productos", "to":"/productos"}
+    ]
+}

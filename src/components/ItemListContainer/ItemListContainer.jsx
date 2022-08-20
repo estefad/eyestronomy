@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react'
 import ItemList from '../ItemList/ItemList'
+import './ItemListContainer.css'
 
 const productos=[
-  {id: 0, modelo: "Buzo AstroNasa", precio: 8000, stock: 3, img: "../../buzo 1.jpeg"},
-  {id: 1, modelo: "Buzo Astro", precio: 7500, stock: 5, img: "../../buzo4.jpg"},
-  {id: 2, modelo: "Buzo AstroIris", precio: 7500, stock: 7, img: "../../buzo3.webp"}
+  {id: 0, title: "Buzo AstroNasa", price: 8000, src: "./buzo 1.jpeg"},
+  {id: 1, title: "Buzo Astro", price: 7500, src: "./buzo4.jpg"},
+  {id: 2, title: "Buzo AstroIris", price: 7500, src: "./buzo3.webp"}
 ];
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({items}) => {
 
   const [products, setProducts]= useState([]);
 
@@ -27,11 +28,12 @@ const ItemListContainer = () => {
   }, [])
 
   return (
-    <div>
-        {products.length ?
-         <ItemList products={productos}/> : 
-         <h1>Cargando..</h1>
+    <div className='miCard'>
+         {/* <span>{props.greeting}</span>  */}
+        {products.length?
+           <ItemList items={products}/> : <h1>Cargando..</h1>
         }
+        
     </div>
   )
 }
