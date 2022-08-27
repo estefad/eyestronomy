@@ -1,8 +1,8 @@
 .carrito{
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
     /* background-color: rgb(53, 53, 53);
     box-shadow: 2px 2px 2px 1px rgba(255, 255, 255, 0.6); */
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 3rem;
     border-radius: 10px;
@@ -22,6 +22,7 @@
     font-family: "Fira Sans Extra Condensed", sans-serif;
     width: 50%;
     transition: color .15s ease-in-out;
+    font-size: 1em;
 }
 
 .boton2:hover{
@@ -39,4 +40,19 @@
     border-style: none;
     background-color: #0a0a0a;
     color: white;
+}
+
+@media (min-width: 481px) and (max-width: 787px) {
+  .boton{
+    margin: 0;
+  } 
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .boton{
+        margin: 0;
+    } 
+
+    .boton2{
+        font-size: .7em;
+    }
 }

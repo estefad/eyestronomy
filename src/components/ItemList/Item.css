@@ -1,10 +1,43 @@
 .card{
     height: fit-content;
-    margin-right: 1.5rem;
+    
+    margin: 10px 10px 10px 10px;
+    position: relative;
+    background-color: #242e30;
+    opacity: 80%;
+    border-radius: 1rem;
+}
+.unaCard{
+    width: 240px;
+    height: 370px;
 }
 
-/* .card-img .top .photo{
-    height: 243px;
-    width: 191px;
-    margin: 0 auto;
-} */
+.photo{
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    height: 220px;
+    width: 220px;
+    margin-left: .6rem;
+}
+
+.titulo{
+    font-size: 1em;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed';
+}
+
+.precio{
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .photo{
+        width: 138px;
+        height: 137.75px;
+    } 
+    .unaCard {
+        width: 159px;
+        height: 280px;
+    } 
+}

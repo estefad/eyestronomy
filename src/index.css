@@ -13,3 +13,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (min-width: 481px) and (max-width: 787px) {
+  body {
+    display: grid;
+    min-width: 481px;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25vh 1fr 16vh;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    padding: 0;
+  }
+  
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    display: grid;
+      min-width: 320px;
+      height: 100vh;
+      grid-template-columns: 1fr;
+      grid-template-rows: 25vh 1fr 16vh;
+      grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+      padding: 0;
+  }
+}
