@@ -16,7 +16,6 @@ const Item = (item) => {
         <Link to={`/item/${item.id}`}>
         <Button variant="primary">Mas detalles</Button>
         </Link>
-        
       </Card.Body>
     </Card>
   )

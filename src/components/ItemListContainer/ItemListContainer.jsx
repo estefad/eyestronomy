@@ -3,7 +3,7 @@ import ItemList from '../ItemList/ItemList'
 import './ItemListContainer.css'
 
 const productos=[
-  {id: 0, title: "Buzo AstroNasa", price: 8000, src: "./buzo 1.jpeg"},
+  {id: 0, title: "Buzo AstroNasa", price: 8000, src: "./buzo.jpeg"},
   {id: 1, title: "Buzo Astro", price: 7500, src: "./buzo4.jpg"},
   {id: 2, title: "Buzo AstroIris", price: 7500, src: "./buzo3.webp"},
   {id: 3, title: "Reme NASA", price: 8000, src: "./reme3.jpg"},
@@ -17,7 +17,7 @@ const productos=[
   {id: 11, title: "Agujeros Negros", price: 7500, src: "./agujeros y pequeños.jpg"}
 ];
 
-const ItemListContainer = ({items}) => {
+const ItemListContainer = () => {
 
   const [products, setProducts]= useState([]);
 

@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 // import { Nav } from 'react-bootstrap';
 
 const Navbar = () => {
-  const navItems=["Productos","Nosotros", "Preguntas Frecuentes"];
+  const navItems=["Nosotros", "Preguntas Frecuentes"];
 
   return (
     <div className='bar'>
@@ -19,18 +19,12 @@ const Navbar = () => {
       <span className="navbar-toggler-icon">Menu</span>
     </button>
     <div className="collapse navbar-collapse" id="navbarNav">
-
-    {/* <NavLink to={"/"}>Home</NavLink>
-    <NavLink to={"/productos"}>Productos</NavLink>
-    {
-      config.routes.map(ruta, index)=>(
-        <NavLink key={}
-      )
-    } */}
-
       <ul className="navbar-nav">
-        {navItems.map((item) =>(
-          <li className="nav-item"><a className="nav-link active" aria-current="page" href='"#"'>{item}</a></li>
+      <Link to={`/Cart`}>
+      <li><a className='nav-link' href='"#"'>Carrito</a></li>
+    </Link>
+        {navItems.map((item, index) =>(
+          <li key={index} className="nav-item"><a className="nav-link active" aria-current="page" href='"#"'>{item}</a></li>
         ))}
       </ul>
     </div>
@@ -42,3 +36,11 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+ /* <NavLink to={"/"}>Home</NavLink>
+    <NavLink to={"/productos"}>Productos</NavLink>
+    {
+      config.routes.map(ruta, index)=>(
+        <NavLink key={}
+      )
+    } */
