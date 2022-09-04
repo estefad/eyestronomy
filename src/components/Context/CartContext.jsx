@@ -11,6 +11,7 @@ export function CartProvider({children}) {
         if(isInCart(item.id)){
             let aux= item; //copio array
             let itemId = aux.indexOf((e) => e.id === item.id);//traigo el i
+            console.log(aux)
             aux[itemId].quantity += quantity;//que aumente la cantidad y la sume a la ya cargada
             setItems([...aux]);//se carga en el new array
         }else{
@@ -19,20 +20,22 @@ export function CartProvider({children}) {
     }
 
     function removeItem(itemId){
-        
+       let itemEliminado = items.filter((producto) => producto.id !== itemId)
+        setItems(itemEliminado);
     }
 
-    function clear(itemId){
+    function clear(){
         setItems([]);
     }
 
     function isInCart(itemId){
+        
         return items.find((e) =>e.id === itemId);
     }
 
 
   return ( 
-    <CartContext.Provider value={{addItem, removeItem, clear, isInCart}}>
+    <CartContext.Provider value={{addItem, removeItem, clear}}>
         {children}
     </CartContext.Provider>
   )

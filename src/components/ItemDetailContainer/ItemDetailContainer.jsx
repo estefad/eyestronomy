@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 import { useParams } from 'react-router-dom';
 import ItemDetail from '../ItemDetail/ItemDetail'
 import './ItemDetailContainer.css'
+import db from '../../services'
+import { collection, getDocs } from 'firebase/firestore';
 
 const products=[
   {id: 0, title: "Buzo AstroNasa", price: 8000, src:"../../../buzo.jpeg", descripcion: "Buzo 100% algodon, con sublimado. Productos de excelente calidad para aficionados al universo"},
@@ -35,6 +37,21 @@ const products=[
         setDatos(data);
       }).catch((err)=> console.log(err))
     }, [id]);
+
+    useEffect(() => {
+      const getData = async()=>{
+        const data= collection(db, 'products')
+        const col=await getDocs(data)
+        const res= col.docs.map((doc)=> doc={id:doc.id, ...doc.data()})
+        console.log(res)
+      }
+      getData()
+    
+      return () => {
+        
+      }
+    }, [])
+    
 
   return (
     <div className='miCard'>
