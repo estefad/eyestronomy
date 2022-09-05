@@ -41,11 +41,11 @@ function onAdd(count){
           defaultOption={talle}/>
 
       {counter ? 
-        <Link to="/cart"><button className='boton2'>Finalizar Compra</button></Link> :
+        <Link to="/cart"><button className='boton2 comprar'>Finalizar Compra</button></Link> :
         <ItemCount onAdd={onAdd}/>
       }
       <div>
-          <p>Talle: {talle}</p>
+          <p className='talle'>Talle: {talle}</p>
           {/* <p>Total: {miTotal(price)}</p> */}
       </div>
     </Card>

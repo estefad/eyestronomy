@@ -6,4 +6,15 @@
 
 .detail{
     box-shadow: 10px 10px 7px 2px currentColor;
+    margin:auto;
+}
+
+.talle{
+    font-size: 1em;
+    color: white;
+    font-family: "Staatliches", cursive;
+}
+
+.comprar{
+    margin-top: 2rem;
 }
