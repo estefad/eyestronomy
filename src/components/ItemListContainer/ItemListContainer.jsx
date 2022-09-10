@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ItemList from '../ItemList/ItemList'
 import './ItemListContainer.css'
+import Spinner from 'react-bootstrap/Spinner';
 
 const productos=[
   {id: 0, title: "Buzo AstroNasa", price: 8000, src: "./buzo.jpeg"},
@@ -36,8 +37,7 @@ const ItemListContainer = () => {
   return (
     <div className='miCard'>
         {products.length?
-           <ItemList items={products}/> : <h1>Cargando Productos..</h1>
-        } 
+           <ItemList items={products}/> : <Spinner animation="grow" />} 
     </div>
   )
 }

@@ -22,11 +22,6 @@ function onAdd(count){
   addItem(item, count);
 }
 
-// function miTotal(price){
-//   const total = price.reduce((price, valor) => price + valor.price, 0)
-//   return total;
-// }
-
   return (
     <Card className='unaCard detalle'>
       <Card.Img className='photo detail' variant="top" src={src}/>
@@ -46,7 +41,6 @@ function onAdd(count){
       }
       <div>
           <p className='talle'>Talle: {talle}</p>
-          {/* <p>Total: {miTotal(price)}</p> */}
       </div>
     </Card>
   )

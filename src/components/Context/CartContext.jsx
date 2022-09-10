@@ -20,8 +20,8 @@ export function CartProvider({children}) {
     }
 
     function removeItem(itemId){
-       let itemEliminado = items.filter((producto) => producto.id !== itemId)
-        setItems(itemEliminado);
+       //let itemEliminado = items.filter((producto) => producto.id !== itemId)
+        setItems(items.filter((producto) => producto.id !== itemId));
     }
 
     function clear(){
@@ -33,9 +33,15 @@ export function CartProvider({children}) {
         return items.find((e) =>e.id === itemId);
     }
 
+    const total = ()=> {
+        //let total = 0
+        //items.forEach(item => { total += item.quantity })
+        let total = items.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+        return total;
+    }
 
   return ( 
-    <CartContext.Provider value={{items, addItem, removeItem, clear}}>
+    <CartContext.Provider value={{items, addItem, removeItem, clear, total}}>
         {children}
     </CartContext.Provider>
   )

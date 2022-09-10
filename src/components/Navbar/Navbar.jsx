@@ -1,12 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Cartwidget from '../CartWidget/Cartwidget';
 import './Nabvar.css'
 import {Link} from 'react-router-dom'
-// import config from './config.json'
-// import { Nav } from 'react-bootstrap';
+import { CartContext } from '../Context/CartContext';
 
 const Navbar = () => {
-  const navItems=["Nosotros", "Preguntas Frecuentes"];
+  const navItems=["Preguntas Frecuentes"];
+  const {items}= useContext(CartContext);
 
   return (
     <div className='bar'>
@@ -23,6 +23,9 @@ const Navbar = () => {
       <Link to={`/Cart`}>
       <li><a className='nav-link' href='"#"'>Carrito</a></li>
     </Link>
+    <Link to={`/`}>
+      <li><a className='nav-link' href='"#"'>Productos</a></li>
+    </Link>
         {navItems.map((item, index) =>(
           <li key={index} className="nav-item"><a className="nav-link active" aria-current="page" href='"#"'>{item}</a></li>
         ))}
@@ -30,7 +33,7 @@ const Navbar = () => {
     </div>
   </div>
 </nav>
-<Cartwidget/>
+{items.length && <Cartwidget/>}
     </div>
   )
 }

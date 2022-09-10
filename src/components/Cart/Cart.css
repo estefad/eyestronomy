@@ -7,3 +7,17 @@
     color: white;
     font-family: "Fira Sans Extra Condensed", sans-serif;
 }
+
+.carrito{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: white;
+}
+
+.clear{
+    margin-right: 1rem;
+}
+
+.carVacio{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: white;
+}

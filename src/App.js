@@ -6,10 +6,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import { CartProvider } from './components/Context/CartContext';
 import Cart from './components/Cart/Cart';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
   return (
+    <>
     <div className="App">
       <CartProvider>
         <BrowserRouter> 
@@ -27,8 +29,10 @@ function App() {
             <Route path="/cart" element={<Cart/>}/>
           </Routes>
           </BrowserRouter>
+          {/* <Footer/> */}
         </CartProvider>
     </div>
+    </>
   );
 }
 
