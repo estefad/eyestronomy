@@ -13,7 +13,7 @@ const Cart = () => {
     {items &&
     <div className='cartContain'>
             {items.map((item, index) => <div className='cart' key={index}> Producto seleccionado: {item.title} - Cantidad: {item.quantity} 
-            <button className="btn" onClick={()=> removeItem(item.quantity)}>Eliminar Producto</button>
+            <button className="btn" onClick={()=> removeItem(item.id)}>Eliminar Producto</button>
             </div>)}
             <div>
       </div>
@@ -24,7 +24,9 @@ const Cart = () => {
     <Link to='/'>
     <button className="btn">Seguir Comprando</button>
     </Link>
-    <button className="btn">Finalizar compra</button>
+    {items.length ? <Link to='/checkout'><button className="btn">Finalizar compra</button></Link> : 
+    <span>Carga tus productos para finalizar tu compra</span> }
+    
     </>
     
   )

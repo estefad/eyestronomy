@@ -26,6 +26,9 @@ const Navbar = () => {
     <Link to={`/`}>
       <li><a className='nav-link' href='"#"'>Productos</a></li>
     </Link>
+    <li><a className='nav-link' href='"#"'>Productos</a></li>
+    <li><a className='nav-link' href='"#"'>Productos</a></li>
+    <li><a className='nav-link' href='"#"'>Productos</a></li>
         {navItems.map((item, index) =>(
           <li key={index} className="nav-item"><a className="nav-link active" aria-current="page" href='"#"'>{item}</a></li>
         ))}
