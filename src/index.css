@@ -1,3 +1,7 @@
+html{
+  overflow: visible;
+}
+
 body {
   max-width: 1280px;
   display: grid;
@@ -17,6 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

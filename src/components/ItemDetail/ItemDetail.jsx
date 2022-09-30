@@ -7,8 +7,8 @@ import Select from '../Select/Select';
 import { CartContext } from '../Context/CartContext';
 
 const ItemDetail = ({item}) => {
-  const {title, price, src, descripcion, stock} = item;
-  const {addItem} = useContext(CartContext);//paso el metodo añadir, lo traigo del context
+  const {id,title, price, src, descripcion, stock} = item;
+  const {isInCart, addItem} = useContext(CartContext);//paso el metodo añadir, lo traigo del context
   const [counter, setCounter]=useState(0);
   const [talle, setTalle] = useState([1]);
   const options=[{value:1, text: 'S'},{value:2, text: 'M'},{value:3, text: 'L'},{value:4, text: 'XL'}];
@@ -34,11 +34,18 @@ function onAdd(count){
           options={options}
           onSelect={optionSelected}
           defaultOption={talle}/>
-
-      {counter ?
+           { stock === 0 ? (
+            <Link to="/"><div className='carrito'>PRODUCTO SIN STOCK</div></Link>):
+            (isInCart(id)||counter ? 
+              (<div> 
+                  <Link to='/'><button className="btn">Seguir Comprando</button></Link>
+                  <Link to='/cart'><button className="btn clear2">Finalizar compra</button></Link>
+                </div>) : (<ItemCount  initial={1} item={item} stock={stock} onAdd={onAdd}/>))
+            }
+      {/* {counter ?
         <Link to="/cart"><button className='boton2 comprar'>Comprar</button></Link> :
         <ItemCount onAdd={onAdd}/>
-      }
+      } */}
       <div>
           <p className='talle'>Talle: {talle}</p>
       </div>

@@ -13,7 +13,7 @@ const Cart = () => {
     {!items.length && <p className='carVacio'>Tu carrito esta vacio</p> }
     {items &&
     <div className='cartContain'>
-            {items.map((item, index) => <div className='cart' key={index}> <img className='mini' src={item.src} alt="" /> <div>Producto seleccionado: {item.title} - Cantidad: {item.quantity}</div>
+            {items.map((item, index) => <div className='cart' key={index}> <img className='mini' src={item.src} alt="" /> <div>Producto seleccionado: {item.title} - Cantidad: {item.quantity} - Precio: ${item.price}</div>
             <button className="btn remove" onClick={()=> removeItem(item.id)}>Eliminar Producto</button>
             </div>)}
             <div>
