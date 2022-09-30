@@ -12,6 +12,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
     .miCard{
         width: 529px;
+        margin: auto;
     }
    
 }

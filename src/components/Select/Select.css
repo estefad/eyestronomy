@@ -3,3 +3,9 @@
     margin: auto;
     text-align: center;
 }
+
+@media (min-width: 481px) and (max-width: 787px) {
+    .select{
+        margin-left: 4rem;
+    }
+}

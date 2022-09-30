@@ -22,12 +22,16 @@
 
 .input {
     margin-bottom: 10px;
-    background-color: #242e30;
+    background-color: #30373a;
     border: 1px solid black;
-    opacity: 30%;
+    opacity: 80%;
     border-radius: 10px;
     width: 120%;
     padding: 1.5rem 3rem;
+}
+
+::placeholder{
+    color: white;
 }
 
 .submit{
