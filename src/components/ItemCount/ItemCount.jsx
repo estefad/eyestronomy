@@ -1,16 +1,17 @@
 import React, {useState} from 'react'
 import './ItemCount.css'
 
-const ItemCount = ({onAdd}) => {
+const ItemCount = ({init=1,onAdd}) => {
      
-    const [counter, setcounter] = useState(1);
-  
+    const [counter, setcounter] = useState(init);
+
     const Incrementar=() =>{
       counter >=6 ?  alert("ALCANZO EL MAX DE STOCK") : counter >=6 ? setcounter(6) : setcounter(counter+1); 
     }
 
     const Decrementar=() =>{
       counter>0 ? setcounter(counter-1) : setcounter(0);
+      
     }
     
   return (

@@ -60,7 +60,7 @@ const Checkout = () => {
                         icon: 'success',
                         timer:5000
                     }).then(removeItem())
-                    .then(function(){window.location.href='/Cart'})
+                    .then(function(){window.location.href='/'})
                 })
             } catch(error){
                     console.log(error)
