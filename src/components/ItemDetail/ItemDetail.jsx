@@ -7,7 +7,7 @@ import Select from '../Select/Select';
 import { CartContext } from '../Context/CartContext';
 
 const ItemDetail = ({item}) => {
-  const {id, title, price, src, descripcion} = item;
+  const {title, price, src, descripcion} = item;
   const {addItem} = useContext(CartContext);//paso el metodo añadir, lo traigo del context
   const [counter, setCounter]=useState(0);
   const [talle, setTalle] = useState([1]);
@@ -26,7 +26,7 @@ function onAdd(count){
     <Card className='unaCard detalle'>
       <Card.Img className='photo detail' variant="top" src={src}/>
       <Card.Body>
-        <Card.Title className='titulo'>{title} {id}</Card.Title>
+        <Card.Title className='titulo'>{title}</Card.Title>
         <Card.Text className='precio'>${price}</Card.Text>
         <Card.Text className='precio'>{descripcion}</Card.Text>
       </Card.Body>
@@ -36,7 +36,7 @@ function onAdd(count){
           defaultOption={talle}/>
 
       {counter ? 
-        <Link to="/cart"><button className='boton2 comprar'>Finalizar Compra</button></Link> :
+        <Link to="/cart"><button className='boton2 comprar'>Comprar</button></Link> :
         <ItemCount onAdd={onAdd}/>
       }
       <div>

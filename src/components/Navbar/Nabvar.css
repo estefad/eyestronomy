@@ -12,9 +12,9 @@
     transition: color .15s ease-in-out;
 }
 
-.nav-link a{
-    color: rgb(6, 24, 34);
-    
+a {
+    color:white;
+    text-decoration: none;
 }
 
 .bg-light {
@@ -35,11 +35,21 @@
     margin-top: .8rem;
 }
 
+.navbar-toggler{
+    margin-top: .1rem;
+}
+a{
+    padding: .3rem;
+}
+
 @media (min-width: 481px) and (max-width: 787px) {
   
     .header{
         min-width: 481px;
         padding: 0 auto;
+    }
+    .bar {
+        margin-left: -6rem;
     }
     
 }
@@ -47,6 +57,9 @@
     .header{
         min-width: 320px;
         padding: 0 auto;
+    }
+    .bar {
+        margin-left: -6rem;
     }
 
    

@@ -1,11 +1,19 @@
+.contain{
+    margin-left: 6rem;
+}
+
 .cartContain{
     padding: .5rem;
+    border-radius: 10px;
+    /* width: 90%; */
+    margin: 0 auto;
 }
 
 .cart{
     font-size: 1.2em;
     color: white;
     font-family: "Fira Sans Extra Condensed", sans-serif;
+    padding: .5rem;
 }
 
 .carrito{
@@ -13,11 +21,94 @@
     color: white;
 }
 
+.total{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: white;
+    margin-bottom: 1rem;
+}
+
 .clear{
     margin-right: 1rem;
+}
+
+.clear2{
+    margin-left: 1rem;
 }
 
 .carVacio{
     font-family: "Fira Sans Extra Condensed", sans-serif;
     color: white;
+}
+
+.carga{
+    display: block;
+    font-size: 1.2em;
+    font-family: 'Fira Sans Extra Condensed';
+    color: white;
+    margin-top: 1rem;
+}
+
+.mini{
+    width: 76px;
+    margin: .8rem;
+}
+
+@media (min-width: 481px) and (max-width: 787px) {
+  
+    .cartContain {
+        margin-right: 2rem;
+    }
+    .carrito {
+        margin-left: -1rem;
+    }
+    .remove {
+        margin-left: -0.2999999999999998rem;
+    }
+    .clear2 {
+        margin-left: -2rem;
+    }
+    .total {
+        margin-top: 1rem;
+        margin-left: -2rem;
+    }
+    .carVacio {
+        margin-left: -1.5rem;
+    }
+    .contain {
+        margin-left: 1rem;
+    }
+    .talle {
+        margin-left: -2rem;
+    }
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    
+    .cartContain {
+        margin-right: 2rem;
+    }
+    .carrito {
+        margin-left: -1rem;
+    }
+    .remove {
+        margin-left: -0.2999999999999998rem;
+    }
+    .clear2 {
+        margin-left: -2rem;
+    }
+    .total {
+        margin-top: 1rem;
+        margin-left: -2rem;
+    }
+    .carVacio {
+        margin-left: -1.5rem;
+    }
+    .contain {
+        margin-left: 1rem;
+    }
+    .talle {
+        margin-left: -2rem;
+    }
+
 }

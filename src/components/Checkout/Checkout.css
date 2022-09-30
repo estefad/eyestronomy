@@ -1,0 +1,98 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    
+}
+
+.datos{
+    font-family: "Staatliches", cursive;
+    color: white;
+    margin-left: 3rem;
+}
+
+.tot{
+    font-family: "Staatliches", cursive;
+    color: white;
+    padding: .5rem;
+    margin-left: 3rem;
+}
+
+.input {
+    margin-bottom: 10px;
+    background-color: #242e30;
+    border: 1px solid black;
+    opacity: 30%;
+    border-radius: 10px;
+    width: 120%;
+    padding: 1.5rem 3rem;
+}
+
+.submit{
+    margin-left: 4rem;
+}
+
+.swal2-container.swal2-center>.swal2-popup {
+    background-color: #242e30;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left] {
+    background-color: #242e30;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right] {
+    background-color: #242e30;
+}
+
+.swal2-title {
+    font-family: 'Fira Sans Extra Condensed';
+}
+
+.swal2-html-container {
+    font-family: "Staatliches", cursive;
+}
+
+@media (min-width: 481px) and (max-width: 787px) {
+    .datos{
+        font-size: 1em;
+        margin-right: 1rem;
+        font-family: 'Fira Sans Extra Condensed';
+    }
+
+    .input {
+        width: 220%;
+        margin-left: -4rem;
+    }
+
+    .tot{
+        margin-left: -7rem;
+    }
+
+    .submit {
+        margin-left: 1rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+    .datos{
+        font-size: .8em;
+        margin-right: 1rem;
+        font-family: 'Fira Sans Extra Condensed';
+    }
+
+    .input {
+        width: 220%;
+        margin-left: -4rem;
+    }
+
+    .tot{
+        margin-left: -7rem;
+        font-size: .7em;
+    }
+
+    .submit {
+        margin-left: -4rem;
+    }
+}

@@ -3,7 +3,7 @@ import './ItemCount.css'
 
 const ItemCount = ({onAdd}) => {
      
-    const [counter, setcounter] = useState(0);
+    const [counter, setcounter] = useState(1);
   
     const Incrementar=() =>{
       counter >=6 ?  alert("ALCANZO EL MAX DE STOCK") : counter >=6 ? setcounter(6) : setcounter(counter+1); 
@@ -20,7 +20,7 @@ const ItemCount = ({onAdd}) => {
         <span className='span'>Productos: {counter}</span>
         <button className='btn' onClick={() => Decrementar() }>-</button>
       </div>
-        <button onClick={() => onAdd(counter)} className='boton2'>Agregar al carrito </button>
+        <button onClick={() => onAdd(counter)} className='agregar'>Agregar al carrito </button> 
     </div>
   )
 }

@@ -25,6 +25,20 @@
     font-size: 1em;
 }
 
+.agregar{
+    
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #0a0a0a;
+    color: white;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    width: 30%;
+    transition: color .15s ease-in-out;
+    font-size: 1em;
+    
+}
+
 .boton2:hover{
     color: #303233;
 }
@@ -51,8 +65,13 @@
     .boton{
         margin: 0;
     } 
-
     .boton2{
         font-size: .7em;
     }
+    .boton{
+        margin-right: -2rem;
+    }
+    .agregar{
+        margin-right: -2rem;
+      }
 }
