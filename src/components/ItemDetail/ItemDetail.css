@@ -13,6 +13,7 @@
     font-size: 1em;
     color: white;
     font-family: "Staatliches", cursive;
+    margin-top: 1rem;
 }
 .precio{
     margin: auto;
@@ -21,15 +22,20 @@
 .comprar{
     margin-top: 2rem;
 }
+.clase{
+    margin-top: 2rem;
+}
 
 @media (min-width: 481px) and (max-width: 787px) {
     .talle{
         margin-left: -1.5rem;
+        margin-top: 2rem;
     }
 }
 @media (min-width: 320px) and (max-width: 480px){
     .talle {
         margin-left: 0rem;
+        margin-top: 2rem;
     }
 }
     

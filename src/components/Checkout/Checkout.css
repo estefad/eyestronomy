@@ -60,7 +60,7 @@
 @media (min-width: 481px) and (max-width: 787px) {
     .datos{
         font-size: 1em;
-        margin-right: 1rem;
+        margin: 0 auto;
         font-family: 'Fira Sans Extra Condensed';
     }
 
@@ -81,7 +81,7 @@
 @media (min-width: 320px) and (max-width: 480px){
     .datos{
         font-size: .8em;
-        margin-right: 1rem;
+        margin: 0 auto;
         font-family: 'Fira Sans Extra Condensed';
     }
 

@@ -37,8 +37,8 @@ function onAdd(count){
            { stock === 0 ? (
             <Link to="/"><div className='carrito'>PRODUCTO SIN STOCK</div></Link>):
             (isInCart(id)||counter ? 
-              (<div> 
-                  <Link to='/'><button className="btn">Seguir Comprando</button></Link>
+              (<div className='clase'> 
+                  <Link to='/'><button className="btn seguir">Seguir Comprando</button></Link>
                   <Link to='/cart'><button className="btn clear2">Finalizar compra</button></Link>
                 </div>) : (<ItemCount  initial={1} item={item} stock={stock} onAdd={onAdd}/>))
             }

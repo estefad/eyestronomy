@@ -24,7 +24,7 @@ const Cart = () => {
     <div className='total'>Total de tu Compra: ${total()}</div>
     <button className="btn clear" onClick={()=> clear(items)}>Vaciar Carrito</button>
     <Link to='/'>
-    <button className="btn">Seguir Comprando</button>
+    <button className="btn seguir">Seguir Comprando</button>
     </Link>
     {items.length ? <Link to='/checkout'><button className="btn clear2">Finalizar compra</button></Link> : 
     <span className='carga'>Carga tus productos para finalizar tu compra</span> }
